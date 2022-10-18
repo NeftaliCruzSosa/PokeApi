@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="./renders.js" defer></script>
+    <script src="./getters.js" defer></script>
+    <script src="./helpers.js" defer></script>
+    <script src="./pokedex.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+    <title>Pokedex - Hazte con todos!</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="wrapper">
+        <img class="logo" src="./assets/logo.png" alt="Pokemon">
+        <div class="search-container">
+          <img src="./assets/search-icon.png" alt="search-icon">
+        <input type="text" name="filter" placeholder="Busca tu pokemon">
+        <button id="region-toggle">Regions</button>
+        </div>
+      </nav>
+      <ol id="pokedex"></ol>
+    </div>
+  </body>
+</html>
+
+
