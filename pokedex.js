@@ -48,6 +48,7 @@ const addEventsListeners = () => {
 };
 
 const disableButtons = (disabled) => {
+  searchInput$$.disabled = disabled;
   const buttons = document.querySelectorAll('button[region]');
   buttons.forEach(button => button.disabled = disabled);
 }
@@ -61,6 +62,7 @@ const loadPokemons = (event) => {
 const arrancar = async () => {
   addEventsListeners();
   renderRegionButtons(Object.keys(regions));
+  disableButtons(true);
   getPokemonsFromRegion("kanto");
 };
 
