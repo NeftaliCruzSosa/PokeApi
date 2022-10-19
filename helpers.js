@@ -23,6 +23,14 @@ const regions = {
     offset: 649,
     limit: 153,
   },
+  alola: {
+    offset: 721,
+    limit: 88,
+  },
+  galar: {
+    offset: 809,
+    limit: 89,
+  }
 };
 
 const typeColors = {
